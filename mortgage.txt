@@ -1,0 +1,13 @@
+property(propertyID1, type(residential),'flat 1, 8 holly bank, ls64dj, leeds').
+
+property(propertyID2, type(residential), 'flat 2, 8 holly bank, ls64dj, leeds').
+
+%Data format for mortgage - mortgage(PropertyID, Type, Value, Deposit, Intrest, Loan, Term).
+
+mortgage(propertyID1,type('buy to rent'),value(250,000),deposit(62500), intrest(3%), 187500, 20).
+
+monthlyPayments(PropertyID) :- 
+		mortgage(PropertyID,_,_,Intrest,Loan,Term).
+		MonthlyPayment is (Term*12) / Loan,
+		write(MonthlyPayment).
+		

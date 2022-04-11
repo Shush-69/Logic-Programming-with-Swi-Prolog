@@ -1,0 +1,15 @@
+agreement(tennantID2, landlord(aty,hoss), 
+		property('flat 2, 8 holly bank, ls64dj, leeds'),
+		tennancy_start('25th february 2021'), 
+		tennancy_end('25th february 2022'), duration_months(12), 
+		rent_pcm(750)).
+
+tennant(tennantID2, tennant(bentley,olivia), email('bentlyoliv@yahoo.com'), phone('07552334498')).
+
+agreement(tennantID3, landlord(aty,hoss), 
+		property('flat 3, 8 holly bank, ls64dj, leeds'),
+		tennancy_start('26th november 2021'), 
+		tennancy_end('25th may 2022'), duration_months(6), 
+		rent_pcm(675)).
+
+tennant(tennantID3, tennant(bish, disfatt), email(disfatt@hotmail.co.uk'), phone('07768834856')).
